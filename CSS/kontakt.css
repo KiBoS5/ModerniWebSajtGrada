@@ -1,0 +1,305 @@
+@font-face {
+  font-family: Roboto;
+  src: url(Font/Roboto-Regular.ttf);
+}
+
+*{
+    font-family:'Roboto', Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header, logo i navigacija - prilagođeni stilovi */
+header {
+    background-color: #496698;
+    text-align: center; /* Vraćeno na originalno poravnanje */
+    padding: 10px;
+    position: relative;
+}
+.logo {
+    text-align: center; /* Poravnavanje loga levo */
+}
+.logo img {
+    width: 550px;
+}
+header .navigacioni-bar {
+    margin-top: 20px;
+}
+header .navigacioni-bar a {
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 4px;
+    transition: border-color 0.3s ease;
+}
+header .navigacioni-bar a:hover {
+    border-bottom: 6px solid #005499;
+}
+
+.padajuci {
+    position: relative;
+    display: inline-block;
+}
+.padajuci-kontent {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 350px;
+    z-index: 1;
+    top: 133%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.padajuci-kontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+@media (min-width: 801px) {
+.padajuci-kontent a:hover {
+    background-color: #004d99;
+}
+
+.padajuci:hover .padajuci-kontent {
+    display: block;
+}
+}
+.okruglo-dugme {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #1a64f9;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+.okruglo-dugme:hover {
+    background-color: #0566c2;
+}
+
+#TamniModDugme img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.dugme2, .dugme3 {
+    position: fixed;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #1d15c0;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dugme2 {
+    bottom: 160px; /* iznad okruglog dugmeta */
+}
+
+.dugme3 {
+    bottom: 220px; /* iznad dugme2 */
+}
+
+.dugme2 img, .dugme3 img {
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    filter: invert(1);
+}
+
+.dugme2:hover, .dugme3:hover {
+    background-color: #0566c2;
+}
+
+
+
+/* Telo stranice */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+}
+body.tamni-rezim {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Kontakt forma - prilagođeni stilovi */
+.form-container {
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 28px 24px 28px;
+    text-align: left;
+}
+.form-container h2 {
+    color: #496698;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.form-container label {
+    color: #333;
+    font-weight: 500;
+}
+.form-container input,
+.form-container textarea {
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+    background: #fff;
+    color: #222;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #496698;
+    outline: none;
+}
+.form-container button[type="submit"] {
+    background: #496698;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.form-container button[type="submit"]:hover {
+    background: #004d99;
+}
+.form-container .error {
+    color: #c0392b;
+    font-size: 0.95rem;
+    text-align: center;
+}
+.form-container .success {
+    color: #2ecc40;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .logo img {
+        width: 220px;
+    }
+    .form-container {
+        padding: 18px 6px 14px 6px;
+    }
+    header .navigacioni-bar a {
+        padding: 10px;
+        font-size: 110%;
+    }
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+.burger span {
+    display: block;
+    height: 12px;
+    margin: 6px 0;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Responsive: prikazi burger, sakrij meni */
+@media (max-width: 800px) {
+    .logo img {
+        width: 120px;
+        height: 25px;
+    }
+    .navigacioni-bar {
+        display: none;
+        flex-direction: column;
+        background: #496698;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        right: auto;
+        width: 200px;
+        z-index: 99;
+    }
+    .navigacioni-bar.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        right: auto;
+    }
+    .navigacioni-bar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #000000;
+        color: #fff;
+        font-size: 120%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .padajuci {
+        position: static;
+        width: 100%;
+    }
+    .padajuci-kontent {
+        display: none;
+        position: relative;
+        left: 50%;
+        min-width: 220px;
+        background: #222;
+        z-index: 9999;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+    .padajuci-kontent.otvori {
+        display: block !important;
+    }
+    .padajuci-kontent a {
+        background: none;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 0;
+        text-align: left;
+    }
+    .padajuci-kontent a:hover {
+        background: #004d99;
+    }
+}

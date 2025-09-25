@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Galerija | Zvornicke manifestacije</title>
+    <meta name="description" content="Pogledajte galeriju slika sa manifestacija u Zvorniku: Zvorničko leto, Dani Zvornika, Zvornička regata i druge.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph za društvene mreže -->
+    <meta property="og:title" content="Galerija | Zvornicke manifestacije">
+    <meta property="og:description" content="Galerija slika sa najpoznatijih manifestacija u Zvorniku.">
+    <meta property="og:image" content="https://domen.com/slike/hram.jpg">
+    <meta property="og:url" content="https://domen.com/galerija">
+    <link rel="canonical" href="https://domen.com/galerija">
+    <link rel="stylesheet" href="CSS/stranice.css">
+    </head>
+
+      <body>
+          <header>
+            
+              <div class="logo">
+                  <img loading="lazy" src="slike/logoz.png" alt="ZLogo">
+              </div>
+              <nav class="navigacioni-bar" id="navigacija">
+                <a href="Pocetna.html">Početna</a>
+                <div class="padajuci">
+                    <a href="#" id="meni">Meni</a>
+                    <div class="padajuci-kontent">
+                        <a href="ZvornickaRegata.html">Zvornicka Regata</a>
+                        <a href="ZvornickiDani.html">Zvornicki Dani</a>
+                        <a href="ZvornickoLeto.html">Zvornicko Leto</a>
+                        <a href="Kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+                <a href="Galerija.html">Galerija</a>
+            </nav>
+            <button class="burger" id="burgerDugme" aria-label="Otvori meni">
+            <span></span>
+             <span></span>
+             <span></span>
+             </button>
+            <a><button class="okruglo-dugme" id="TamniModDugme"><img src="Slike/dark.png"></button></a>
+            <button class="dugme2" id="VeciFont"><img src="slike/VeciFont.png" alt="Povecaj font"></button>
+            <button class="dugme3" id="ManjiFont"><img src="slike/ManjiFont.png" alt="Smanji font"></button>
+        </header>      
+
+  <main>
+
+
+
+    <h1>Zvornicka galerija</h1>
+
+   <div class="galerija-slajder">
+  <img loading="lazy" class="galerija-slajd" src="slike/hram.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/uTvrdjavi.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/hramA.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/noc.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/night.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/crkva.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/dron.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/kulaa.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/magla.jpg" style="width:100%">
+  <img loading="lazy" class="galerija-slajd" src="slike/rostilj.jpg" style="width:100%">
+
+  <a class="galerija-predhodni" onclick="sledeciSlajd(-1)">&#10094;</a>
+  <a class="galerija-sledeci" onclick="sledeciSlajd(1)">&#10095;</a>
+
+  <div class="galerija-tacke">
+    <span class="galerija-tacka" onclick="trenutniSlajd(1)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(2)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(3)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(4)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(5)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(6)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(7)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(8)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(9)"></span>
+    <span class="galerija-tacka" onclick="trenutniSlajd(10)"></span>
+  </div>
+</div>
+
+
+  </main>
+
+  <footer>
+    <div class="f-kontent">
+        <div class="f-logo">
+            <img loading="lazy" height="50" width="50" src="slike/grb.png" alt="Grb grada Zvornika">
+        </div>
+        
+        <div class="f-mreze">
+            <ul>
+                <li><a href="https://www.facebook.com"><img loading="lazy" src="slike/facebok.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img loading="lazy" src="slike/twiter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com"><img loading="lazy" src="slike/insta.png" alt="Instagram"></a></li>
+               
+            </ul>
+        </div>
+    </div>
+    
+</footer>  
+
+
+<script src="JS/Darkmode.js"></script>
+<script src="JS/PromenaSlajda.js"></script>
+<script src="JS/Burger.js"></script>
+<script src="JS/VeciManjiFont.js"></script>
+</body>
+
+</html>

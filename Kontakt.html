@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+       <meta charset="UTF-8">
+    <title>Kontakt | Zvornicke manifestacije</title>
+    <meta name="description" content="Kontaktirajte nas za sve informacije o manifestacijama u Zvorniku. Pošaljite poruku putem kontakt forme.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph za društvene mreže -->
+    <meta property="og:title" content="Kontakt | Zvornicke manifestacije">
+    <meta property="og:description" content="Kontaktirajte nas za sve informacije o manifestacijama u Zvorniku.">
+    <meta property="og:image" content="https://domen.com/slike/logoz.png">
+    <meta property="og:url" content="https://domen.com/kontakt">
+    <link rel="canonical" href="https://domen.com/kontakt">
+    <!-- Učitava prvo Bootstrap CSS -->
+    <!-- https://getbootstrap.com -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Učitava se prilagođeni CSS poslednji da bi prepisao Bootstrap stilove -->
+    <link rel="stylesheet" href="CSS/kontakt.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img loading="lazy" src="slike/logoz.png" alt="ZLogo" class="img-fluid">
+    </div>
+    <nav class="navigacioni-bar" id="navigacija">
+        <a href="Pocetna.html">Početna</a>
+        <div class="padajuci">
+            <a href="#" id="meni">Meni</a>
+            <div class="padajuci-kontent">
+                <a href="ZvornickaRegata.html">Zvornicka Regata</a>
+                <a href="ZvornickiDani.html">Zvornicki Dani</a>
+                <a href="ZvornickoLeto.html">Zvornicko Leto</a>
+                <a href="Kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <a href="Galerija.html">Galerija</a>
+    </nav>
+    <button class="burger" id="burgerDugme" aria-label="Otvori meni">
+            <span></span>
+             <span></span>
+             <span></span>
+             </button>
+         <a href="#"><button class="okruglo-dugme" id="TamniModDugme"><img src="slike/dark.png" alt="tamnatema"></button></a>
+             <button class="dugme2" id="VeciFont"><img src="slike/VeciFont.png" alt="Povecaj font"></button>
+             <button class="dugme3" id="ManjiFont"><img src="slike/ManjiFont.png" alt="Smanji font"></button>
+        </header>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="form-container bg-light rounded-3 shadow p-4 text-center">
+                <h2 class="text-center mb-4">Kontaktirajte nas</h2>
+                <form id="forma">
+                    <div class="mb-3">
+                        <label for="Ime" class="form-label text-start d-block">Ime i prezime</label>
+                        <input type="text" id="ime" name="name" class="form-control" placeholder="Unesite vaše ime i prezime" pattern="[A-Za-zČčĆćŽžŠšĐđ ]+" minlength="2" maxlength="30" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label text-start d-block">Email adresa</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="primer@mail.com" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Poruka" class="form-label text-start d-block">Poruka</label>
+                        <textarea id="poruka" name="poruka" rows="5" class="form-control" placeholder="Unesite vašu poruku..." minlength="10" maxlength="300" required ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Pošalji</button>
+                    <p id="greskaPoruka" class="greska mt-3"></p>
+                    <p id="uspehPoruka" class="uspeh mt-3"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="JS/Validacije.js"></script>
+<script src="JS/Darkmode.js"></script>
+<script src="JS/Burger.js"></script>
+<script src="JS/VeciManjiFont.js"></script>
+</body>
+</html>
