@@ -585,3 +585,66 @@ main img{
         background: #004d99;
     }
 }
+/* Sekcija O Nama */
+.o-nama {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.o-nama h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.o-nama-kontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.moja-slika img {
+    width: 280px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.moja-slika img:hover {
+    transform: scale(1.05);
+}
+
+.moji-podaci {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.moji-podaci a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.moji-podaci a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivno ponašanje */
+@media (max-width: 768px) {
+    .o-nama-kontent {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .moji-podaci {
+        text-align: center;
+    }
+}

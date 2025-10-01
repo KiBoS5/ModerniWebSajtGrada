@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLQXVKR3T6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YLQXVKR3T6');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>O Nama | Zvornik manifestacije</title>
+    <meta name="description" content="Saznajte više o meni i mom radu na sajtu posvećenom zvorničkim manifestacijama.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph za društvene mreže -->
+    <meta property="og:title" content="O Nama | Zvornik manifestacije">
+    <meta property="og:description" content="Saznajte više o meni i mom radu na sajtu posvećenom zvorničkim manifestacijama.">
+    <meta property="og:image" content="slike/logoz.png">
+    <meta property="og:url" content="https://kibos5.github.io/ModerniWebSajtGrada/ONama.html">
+    <link rel="canonical" href="https://kibos5.github.io/ModerniWebSajtGrada/ONama.html">
+    
+    <link rel="stylesheet" href="CSS/pocetna.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img loading="lazy" src="slike/logoz.png" alt="Zvornik logo">
+    </div>
+    
+    <nav class="navigacioni-bar" id="navigacija">
+        <a href="Pocetna.html">Početna</a>
+        <div class="padajuci">
+            <a href="#" id="meni">Meni</a>
+            <div class="padajuci-kontent">
+                <a href="ZvornickaRegata.html">Zvornicka Regata</a>
+                <a href="ZvornickiDani.html">Zvornicki Dani</a>
+                <a href="ZvornickoLeto.html">Zvornicko Leto</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="ONama.html">O Nama</a>
+            </div>
+        </div>
+        <a href="Galerija.html">Galerija</a>
+    </nav>
+
+    <button class="burger" id="burgerDugme" aria-label="Otvori meni">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <button class="okruglo-dugme" id="TamniModDugme"><img src="slike/tamni.png" alt="Tamni režim"></button>
+    <button class="dugme2" id="VeciFont"><img src="slike/VeciFont.png" alt="Povecaj font"></button>
+    <button class="dugme3" id="ManjiFont"><img src="slike/ManjiFont.png" alt="Smanji font"></button>
+</header>
+
+<main>
+    <section class="o-nama">
+        <h2>O Meni</h2>
+        <div class="o-nama-kontent">
+            <div class="moja-slika">
+                <img loading="lazy" src="slike/Bojan Vasiljević.jpg" alt="Moja slika">
+            </div>
+            <div class="moji-podaci">
+                <p>Zdravo! Ja sam <b>Bojan Vasiljević</b> i autor sam ovog sajta posvećenog zvorničkim manifestacijama. 
+                Oduvek me je inspirisala kultura i tradicija Zvornika, pa sam želeo da napravim mesto na internetu gde svi 
+                mogu da pronađu informacije o događajima kao što su <i>Zvornička regata</i>, <i>Dani Zvornika</i> i <i>Zvorničko leto</i>.</p>
+                
+                <p>Na sajtu možete pronaći detalje o događajima, galeriju slika i kontakte. 
+                Ako želite da me kontaktirate, posetite <a href="Kontakt.html">kontakt stranicu</a>.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="f-kontent">
+        <div class="f-logo">
+            <img loading="lazy" src="slike/grb.png" alt="Grb grada Zvornika">
+        </div>
+        <div class="f-mreze">
+            <ul>
+                <li><a href="https://www.facebook.com"><img loading="lazy" src="slike/facebok.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img loading="lazy" src="slike/twiter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com"><img loading="lazy" src="slike/insta.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="JS/Tamnimode.js"></script>
+<script src="JS/Burger.js"></script>
+<script src="JS/VeciManjiFont.js"></script>
+</body>
+</html>
